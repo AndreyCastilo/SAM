@@ -1,0 +1,367 @@
+@font-face{
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-family: 'openSans';
+}
+
+@font-face{
+     src: url('../fonts/OpenSans-Bold.ttf');
+    font-family: 'openSans';
+    font-weight: bold;
+}
+
+.navbar-brand{
+    color: #167ac6 !important; 
+}
+*{
+    font-family: 'openSans';
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.white{
+    background-color: white;
+}
+
+header{
+    padding: 0px 10px;
+    background-color:   whitesmoke;
+    color: #0059b3;
+    overflow: hidden;
+}
+
+
+
+#titulo img{
+    vertical-align: middle;
+    width: 70px;
+}
+
+#titulo{
+    float: left;
+}
+
+header #logo{
+    display: inline-block;
+}
+
+
+
+#logo{
+    padding: 10px 5px;
+}
+
+#logo img, #logo h1{
+    display: inline-block;
+}
+
+#logo h1{
+    font-size: 38px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;    
+    height: 100%;
+    background-color: black;
+    opacity: .50;
+}
+
+/*
+#inicioSesion  button{
+    font-size: 18px;
+    padding: 4px;
+    background-color: #336699;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}*/
+
+button:hover{
+    cursor: pointer
+}
+
+#inicioSesion{
+    text-align: center;
+    background-color:  white;
+    color:#555;
+    margin: 30px auto;
+    padding: 16px;
+    width: 600px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+
+#inicioSesion table{
+    margin: auto;
+    padding: 10px 2px;
+}
+
+
+#inputs{
+    margin: 20px 0px;
+   
+}
+
+#inputs *{
+    font-size: 14px;
+    border: none;
+}
+
+
+td{
+    text-align: right;
+    padding: 5px;
+    color: #555;
+}
+
+table input[type="text"]{
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 2px;
+}
+
+.center{
+    text-align: center;
+}
+
+.error{
+    color: red;
+}
+
+#mensajeError{
+    display: none;
+}
+
+
+/*-------------------------Administradors*/
+#usuario img{
+    vertical-align: text-bottom;
+}
+
+#usuario{
+    float: right;
+    padding: 20px;
+    color: #aaa;
+}
+
+#usuario:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+html,body{
+    height: 100%;
+}
+
+body{
+    /*overflow: hidden;*/
+}
+
+
+#menu{
+    float: left;
+    background-color: #0099cc;
+    color: white;
+    width: 200px;
+    text-align: center;
+    height: 100%;
+    
+}
+
+#menu ul li{
+    padding: 10px 5px;
+}
+
+#menu ul li img{
+    vertical-align: text-bottom;
+}
+
+#menu ul li:hover{
+    background-color: white;
+    color: #555;
+} 
+
+#usuarios{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#cuerpo{
+    float: left;
+    padding: 20px 40px;
+}
+
+.barraBusqueda{
+    overflow: hidden;
+    border-radius: 20px;
+    display: inline;
+}
+
+
+.barraBusqueda input[type="text"]{
+    font-size: 18px;
+    border: 1px solid #eee;
+    padding: 2px;
+    color: #555;
+}
+
+.barraBusqueda button{
+    padding: 2px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+
+
+.rojo{
+    background-color: #EA4335;
+}
+
+.verde{
+    background-color: #34A853;
+}
+
+#btnAgregarUsuario{
+    padding: 3px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    color: white;
+     border-radius: 4px;
+    font-size: 18px;
+    border: 1px solid #34A853; 
+    margin-left: 6px;
+    float: left;
+}
+
+#tablaUsuarios{
+    display: block;
+}
+
+#tablaUsuarios{
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    padding: 20px 0px;
+}
+
+#tablaUsuarios table{
+    border-collapse: collapse;
+}
+
+
+.stylish-input-group{
+    float: left;
+    width: 420px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+
+
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+#tablaUsuarios table tr:nth-child(even){
+    background-color: #eee; 
+}
+
+#tablaUsuarios table tr{
+    background-color: white;
+}
+
+#tablaUsuarios table th, #tablaUsuarios table td{
+    padding: 8px 25px;
+}
+
+#tablaUsuarios table th{
+    background-color: #538cc6;
+    color: white;
+    text-align: center;
+}
+
+
+
+.editar{
+     background-color:#0099cc ;
+    color: white;
+    border: 1px solid #0099cc;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;   
+}
+
+.eliminar{
+    background-color: #EA4335;
+    color: white;
+    border: 1px solid #EA4335;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.top{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#agregarUsuario{
+    padding: 20px;
+    border: 1px solid #eee;
+    text-align: center;
+    color: #555;
+    width: 400px;
+    margin: 0px auto;
+}
+
+#agregarUsuario table{
+    margin: 0px auto;
+}
+
+#agregarUsuario table tr td{
+    padding: 5px;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

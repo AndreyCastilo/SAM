@@ -1,0 +1,508 @@
+/*!
+ * Start Bootstrap - SB Admin 2 v3.3.7+1 (http://startbootstrap.com/template-overviews/sb-admin-2)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+  background-color: #0099cc;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.observacion{
+    border-top: 2px solid #eee;
+    padding: 10px;
+}
+#divObservaciones{
+    padding: 0px !important;
+}
+#modalObservacionesSolicitud .modal-body {
+    padding: 0px;
+}
+
+#modalObservacionesSolicitud .modal-body > div {
+    padding: 10px;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+.error{
+    box-shadow: 0px 0px 5px 1px red;
+}
+
+#wrapper {
+  width: 100%;
+}
+#page-wrapper {
+  padding: 0 15px;
+  min-height: 568px;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  #page-wrapper {
+    position: inherit;
+    margin: 0 0 0 180px;
+    padding: 0 30px;
+    border-left: 1px solid #e7e7e7;
+  }
+}
+.navbar-custom{
+    background-color: #eee;
+   
+}
+.navbar-top-links {
+  margin-right: 0;
+}
+
+.botonesUsuario .input-group{
+    width: 400px;
+    display: inline-flex;
+}
+.btn-verde{
+    margin-left: 40px;
+}
+
+.noEditable{
+    background-color: #eee;
+}
+
+#tablaUsuarios{
+    margin-top: 40px;
+    border-radius: 4px;
+    /*max-width: 700px;*/
+}
+
+#tablaUsuarios table *{
+    text-align: center;
+}
+
+.formulario tr td{
+    padding:    5px;
+}
+
+.formulario tr td input[type="text"],.formulario tr td input[type="password"],textArea{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    width: 220px;
+}
+
+.alternativa{
+    width: auto;
+}
+
+.formulario tr td label{
+    font-weight: normal;
+    float: right;
+}
+
+.alternativa .formulario{
+
+}
+
+#tablaCuenta table tbody tr:first-child{
+    border: 0px solid blue;
+}
+
+.modal-header{
+    padding: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+#botonesEliminar{
+    margin-top: 10px;
+}
+
+.center *{
+    margin: 0 auto;
+}
+
+.navbar-top-links li {
+  display: inline-block;
+}
+.navbar-top-links li:last-child {
+  margin-right: 15px;
+}
+.navbar-top-links li a {
+  padding: 15px;
+  min-height: 50px;
+}
+.navbar-top-links .dropdown-menu li {
+  display: block;
+}
+.navbar-top-links .dropdown-menu li:last-child {
+  margin-right: 0;
+}
+.navbar-top-links .dropdown-menu li a {
+  padding: 3px 20px;
+  min-height: 0;
+}
+.navbar-top-links .dropdown-menu li a div {
+  white-space: normal;
+}
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+  width: 310px;
+  min-width: 0;
+}
+.navbar-top-links .dropdown-messages {
+  margin-left: 5px;
+}
+.navbar-top-links .dropdown-tasks {
+  margin-left: -59px;
+}
+.navbar-top-links .dropdown-alerts {
+  margin-left: -123px;
+}
+.navbar-top-links .dropdown-user {
+  right: 0;
+  left: auto;
+}
+
+.navbar-top-links:hover,.dropdown-toggle:hover{
+    /*background-color: red;*/
+}
+
+.c-black{
+    color:#555;
+}
+.sidebar .sidebar-nav.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+.sidebar .sidebar-search {
+  padding: 15px;
+}
+
+
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: white;
+  color: #555;
+}
+
+.sidebar ul {
+  background-color: #0099cc;
+  color: white;
+}
+
+.sidebar .arrow {
+  float: right;
+}
+
+
+.selected{
+    background-color: white;
+    color: #555;
+}
+
+.sidebar .fa.arrow:before {
+  content: "\f104";
+}
+.sidebar .active > a > .fa.arrow:before {
+  content: "\f107";
+}
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+  border-bottom: none !important;
+}
+.sidebar .nav-second-level li a {
+  padding-left: 37px;
+}
+.sidebar .nav-third-level li a {
+  padding-left: 52px;
+}
+
+.btnsEdiEli button{
+    margin: 0px 3px;
+}
+
+.alerta{
+    position: fixed;
+    display: none;
+    top: 85%;
+    right: 3%;
+    z-index: 1001;
+}
+
+.alerta a{
+    margin-left: 4px;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 180px;
+    margin-top: 51px;
+  }
+  .navbar-top-links .dropdown-messages,
+  .navbar-top-links .dropdown-tasks,
+  .navbar-top-links .dropdown-alerts {
+    margin-left: auto;
+  }
+}
+.btn-outline {
+  color: inherit;
+  background-color: transparent;
+  transition: all .5s;
+}
+.btn-primary.btn-outline {
+  color: #428bca;
+}
+.btn-success.btn-outline {
+  color: #5cb85c;
+}
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: white;
+}
+
+
+.labelError{
+    color: #EA4335;
+}
+
+.sin-margen{
+    margin: 0px;
+}
+
+
+.encAgregarSolicitudes{
+    padding-bottom: 10px;
+}
+
+.modalAgregarSoli{
+    width: 743px;
+}
+
+.inline-b{
+    display: inline-block;
+}
+
+.pr-verde {
+    display: block;
+    background-color: #34A853;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.pr-amarillo {
+    display: block;
+    background-color: #FFDA31;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.pr-rojo {
+    display: block;
+    background-color: #EA4335;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.vertical-center{
+    display: flex;
+    align-items: center;
+}
+
+.pr-sm-Verde {
+    display: inline-block;
+    background-color: #34A853;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    margin-left: 3px;
+}
+
+.pr-sm-Amarillo {
+    display: inline-block;
+    background-color: #FFDA31;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    margin-left: 3px;
+}
+.pr-sm-Rojo {
+    display: inline-block;
+    background-color: #EA4335;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    margin-left: 3px;
+}
+
+.pr-sm-Blanco{
+    display: inline-block;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    margin-left: 3px;
+}
+
+.pr-Blanco {
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #555;
+}
+
+.pr-Verde {
+    display: block;
+    background-color: #34A853;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #555;
+}
+
+.pr-Amarillo {
+    display: block;
+    background-color: #FFDA31;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #555;
+}
+.pr-Rojo {
+    display: block;
+    background-color: #EA4335;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #555;
+}
+
+.divPrioridad{
+    display: flex;
+    align-items: center;
+}
+
+.motivo{
+    background-color: #E5F2F7;
+    border-top: 1px solid rgb(230, 236, 240);
+    margin: 0px;
+    width: 100%;
+}
+
+
+#errorMotivoRechazo{
+    display: none;
+}
+
+.navbar-brand{
+    background-image: url("../icons/logo.png");
+    background-repeat: no-repeat;
+    background-size: 40px; 
+    background-position-y: center;
+}
+
+.navbar-brand {
+    margin-left: 5px;
+    padding-left: 45px;
+}
+
+#labelEnc > span{
+    cursor: pointer;
+}
+
+#labelEnc > span:hover{
+    color: #428bca;
+}
+#tablaCuenta, #adminUsuarios,#solicitudes,#formAgregar,#formEditarUsuario,#agregaSolicitud{
+    display: none;
+}
+
+.closeForm {
+    padding: 10px 5px;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.closeForm > i{
+    cursor: pointer;
+}
+
+.closeForm > i:hover{
+   color:#EA4335;
+}
+
+.btnDataTable{
+    visibility: hidden;
+    margin: 0px 0px;
+}
+
+#usuariosTable button,#example button,#tablaSolicitudes button,#tablaSolicitudesInicio button,#tableSolicitudesPendientes button{
+    margin: 0px 3px;
+}
+
+#example tr > td:eq(7), #example tr> th:eq(7){
+    min-width: 250px;
+}
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+}
